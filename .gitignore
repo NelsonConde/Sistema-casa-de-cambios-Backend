@@ -1,33 +1,41 @@
-HELP.md
+# Maven / compilados
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+*.class
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Logs
+*.log
+logs/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Configuraciones locales de Spring
+application-local.properties
+application-local.yml
+application-dev-local.properties
+application-dev-local.yml
+application-prod.properties
+application-prod.yml
+
+# IntelliJ IDEA
+.idea/
 *.iml
+*.iws
 *.ipr
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+# VS Code
 .vscode/
+
+# Eclipse / STS
+.project
+.classpath
+.settings/
+.metadata/
+.springBeans
+.sts4-cache/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
